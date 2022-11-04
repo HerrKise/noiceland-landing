@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+.container {
+  background: #fff;
+  width: 1440px;
+  height: 4805px;
+  margin: auto;
+}
+
+.test {
+  font-family: "Tenor Sans";
+}
+
+header {
+  height: 90px;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  margin-left: 120px;
+}
+header nav {
+  margin-right: 120px;
+}
+header nav button {
+  margin: auto 20px;
+  font-family: "Libre Franklin", sans-serif;
+  border: none;
+  background: inherit;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */
