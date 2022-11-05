@@ -39,4 +39,84 @@ header nav button {
   border: none;
   background: inherit;
   font-size: 14px;
+}
+
+.main-article {
+  margin: 60px 120px;
+  display: flex;
+  gap: 50px;
+}
+.main-article .main-article__img {
+  display: block;
+  width: 721px;
+  height: 474px;
+}
+.main-article .main-article__img-description {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 10px;
+  color: #999999;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+.main-article .main-article__header {
+  font-family: "Tenor Sans";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 27px;
+  line-height: 42px;
+}
+.main-article .main-article__description {
+  display: block;
+  width: 350px;
+  font-size: 16px;
+  color: #666666;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+.main-article .main-article__author {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.top-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 50px;
+  margin: 0 120px;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.top-posts .top-posts__post .top-posts__img {
+  display: block;
+  width: 387px;
+  height: 254px;
+  margin-bottom: 24px;
+}
+.top-posts .top-posts__post .top-posts__img-description {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 10px;
+  color: #999999;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+.top-posts .top-posts__post .top-posts__post-header {
+  font-family: "Tenor Sans";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 15px;
+  line-height: 24px;
+}
+.top-posts .top-posts__post .top-posts__post-author {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=style.css.map */

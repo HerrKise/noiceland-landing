@@ -43,3 +43,95 @@ header {
         }
     }
 }
+
+@mixin img-descriprion {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 10px;
+    color: #999999;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+@mixin header {
+    font-family: "Tenor Sans";
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@mixin author {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.main-article {
+    margin: 60px 120px;
+    display: flex;
+    gap: 50px;
+
+    .main-article__img {
+        display: block;
+        width: 721px;
+        height: 474px;
+    }
+
+    .main-article__img-description {
+        @include img-descriprion;
+    }
+
+    .main-article__header {
+        @include header;
+        font-size: 36px;
+        margin-bottom: 27px;
+        line-height: 42px;
+    }
+
+    .main-article__description {
+        display: block;
+        width: 350px;
+        font-size: 16px;
+        color: #666666;
+        line-height: 24px;
+        margin-bottom: 28px;
+    }
+
+    .main-article__author {
+        @include author;
+    }
+}
+
+.top-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 50px;
+    margin: 0 120px;
+    padding-bottom: 90px;
+    border-bottom: 1px solid #e6e6e6;
+
+    .top-posts__post {
+        .top-posts__img {
+            display: block;
+            width: 387px;
+            height: 254px;
+            margin-bottom: 24px;
+        }
+
+        .top-posts__img-description {
+            @include img-descriprion;
+        }
+
+        .top-posts__post-header {
+            @include header;
+            font-size: 20px;
+            margin-bottom: 15px;
+            line-height: 24px;
+        }
+
+        .top-posts__post-author {
+            @include author;
+        }
+    }
+}
