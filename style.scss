@@ -109,29 +109,67 @@ header {
     row-gap: 50px;
     margin: 0 120px;
     padding-bottom: 90px;
+    margin-bottom: 90px;
     border-bottom: 1px solid #e6e6e6;
 
-    .top-posts__post {
-        .top-posts__img {
+    .posts__post {
+        .posts__img {
             display: block;
             width: 387px;
             height: 254px;
             margin-bottom: 24px;
         }
 
-        .top-posts__img-description {
+        .posts__img-description {
             @include img-descriprion;
         }
 
-        .top-posts__post-header {
+        .posts__post-header {
             @include header;
             font-size: 20px;
             margin-bottom: 15px;
             line-height: 24px;
         }
 
-        .top-posts__post-author {
+        .posts__post-author {
             @include author;
+        }
+    }
+}
+
+.latest-posts-container {
+    display: flex;
+    margin: 0 120px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 90px;
+    border-bottom: 1px solid #e6e6e6;
+
+    .latest-posts__header {
+        @include img-descriprion;
+        margin-bottom: 30px;
+        align-self: flex-start;
+    }
+
+    .latest-posts__button {
+        @include author;
+        font-weight: 400;
+        padding: 21px 26px;
+        text-transform: uppercase;
+        background: #fff;
+    }
+}
+
+.latest-posts {
+    @extend .top-posts;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: none;
+    padding: 0;
+
+    .posts__post {
+        .posts__img {
+            width: 285px;
+            height: 187px;
         }
     }
 }

@@ -82,7 +82,7 @@ header nav button {
   letter-spacing: 1px;
 }
 
-.top-posts {
+.top-posts, .latest-posts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 20px;
@@ -90,15 +90,16 @@ header nav button {
   row-gap: 50px;
   margin: 0 120px;
   padding-bottom: 90px;
+  margin-bottom: 90px;
   border-bottom: 1px solid #e6e6e6;
 }
-.top-posts .top-posts__post .top-posts__img {
+.top-posts .posts__post .posts__img, .latest-posts .posts__post .posts__img {
   display: block;
   width: 387px;
   height: 254px;
   margin-bottom: 24px;
 }
-.top-posts .top-posts__post .top-posts__img-description {
+.top-posts .posts__post .posts__img-description, .latest-posts .posts__post .posts__img-description {
   font-family: "Libre Franklin", sans-serif;
   font-size: 10px;
   color: #999999;
@@ -106,7 +107,7 @@ header nav button {
   margin-bottom: 18px;
   text-transform: uppercase;
 }
-.top-posts .top-posts__post .top-posts__post-header {
+.top-posts .posts__post .posts__post-header, .latest-posts .posts__post .posts__post-header {
   font-family: "Tenor Sans";
   font-weight: 400;
   text-transform: uppercase;
@@ -114,9 +115,48 @@ header nav button {
   margin-bottom: 15px;
   line-height: 24px;
 }
-.top-posts .top-posts__post .top-posts__post-author {
+.top-posts .posts__post .posts__post-author, .latest-posts .posts__post .posts__post-author {
   font-family: "Libre Franklin", sans-serif;
   font-weight: bold;
   font-size: 10px;
   letter-spacing: 1px;
+}
+
+.latest-posts-container {
+  display: flex;
+  margin: 0 120px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.latest-posts-container .latest-posts__header {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 10px;
+  color: #999999;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  align-self: flex-start;
+}
+.latest-posts-container .latest-posts__button {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 21px 26px;
+  text-transform: uppercase;
+  background: #fff;
+}
+
+.latest-posts {
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: none;
+  padding: 0;
+}
+.latest-posts .posts__post .posts__img {
+  width: 285px;
+  height: 187px;
 }/*# sourceMappingURL=style.css.map */
