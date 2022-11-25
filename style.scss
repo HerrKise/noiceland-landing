@@ -64,6 +64,7 @@ header {
     font-weight: bold;
     font-size: 10px;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .main-article {
@@ -140,6 +141,7 @@ header {
 .latest-posts-container {
     display: flex;
     margin: 0 120px;
+    margin-bottom: 90px;
     flex-direction: column;
     align-items: center;
     padding-bottom: 90px;
@@ -170,6 +172,34 @@ header {
         .posts__img {
             width: 285px;
             height: 187px;
+        }
+    }
+}
+
+.featured-posts-container {
+    display: flex;
+    margin: 0 120px;
+    flex-direction: column;
+    padding-bottom: 90px;
+
+    .featured-posts__header {
+        @include img-descriprion;
+        margin-bottom: 30px;
+        align-self: flex-start;
+    }
+}
+
+.featured-posts {
+    @extend .top-posts;
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: none;
+    padding: 0;
+
+    .posts__post {
+        .posts__img {
+            width: 590px;
+            height: 387px;
         }
     }
 }
