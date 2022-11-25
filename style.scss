@@ -40,6 +40,12 @@ header {
             border: none;
             background: inherit;
             font-size: 14px;
+            cursor: pointer;
+
+            &:hover {
+                color: #666;
+                border-bottom: 1px solid #969696;
+            }
         }
     }
 }
@@ -159,6 +165,12 @@ header {
         padding: 21px 26px;
         text-transform: uppercase;
         background: #fff;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #666;
+            color: #fff;
+        }
     }
 }
 
@@ -200,6 +212,121 @@ header {
         .posts__img {
             width: 590px;
             height: 387px;
+        }
+    }
+}
+
+footer {
+    background-color: #141414;
+}
+
+.trademark {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 120px;
+    margin-bottom: 60px;
+    padding-top: 93px;
+    padding-bottom: 62px;
+    border-bottom: 1px solid #4d4d4d;
+    h1 {
+        display: inline-block;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 16px;
+    }
+
+    p {
+        display: inline-block;
+        @include author;
+        color: #666;
+        margin-left: 15px;
+    }
+}
+
+.links {
+    margin: 0 120px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+
+    .categories {
+        color: #fff;
+
+        h3 {
+            @include author;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .categories__links {
+            display: grid;
+            grid-template-columns: repeat(4, 160px);
+            column-gap: 75px;
+
+            a {
+                display: block;
+                font-family: "Libre Franklin", sans-serif;
+                font-size: 14px;
+                letter-spacing: 1px;
+                line-height: 24px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .subscribe-form {
+        h3 {
+            @include author;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 18px 24px;
+            font-family: "Libre Franklin", sans-serif;
+
+            &::placeholder {
+                font-family: "Libre Franklin", sans-serif;
+            }
+        }
+
+        button {
+            padding: 18px 24px;
+            font-family: "Libre Franklin", sans-serif;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #666;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.links-second-line {
+    margin: 0 120px;
+    padding-bottom: 95px;
+    display: grid;
+    grid-template-columns: repeat(3, 160px);
+    column-gap: 75px;
+    color: #fff;
+
+    .links-container {
+        h3 {
+            @include author;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .links-container__links a {
+            font-weight: 400;
+            display: block;
+            font-family: "Libre Franklin", sans-serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 24px;
+            margin-bottom: 15px;
         }
     }
 }

@@ -39,6 +39,11 @@ header nav button {
   border: none;
   background: inherit;
   font-size: 14px;
+  cursor: pointer;
+}
+header nav button:hover {
+  color: #666;
+  border-bottom: 1px solid #969696;
 }
 
 .main-article {
@@ -153,6 +158,11 @@ header nav button {
   padding: 21px 26px;
   text-transform: uppercase;
   background: #fff;
+  cursor: pointer;
+}
+.latest-posts-container .latest-posts__button:hover {
+  background-color: #666;
+  color: #fff;
 }
 
 .latest-posts {
@@ -191,4 +201,127 @@ header nav button {
 .featured-posts .posts__post .posts__img {
   width: 590px;
   height: 387px;
+}
+
+footer {
+  background-color: #141414;
+}
+
+.trademark {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 120px;
+  margin-bottom: 60px;
+  padding-top: 93px;
+  padding-bottom: 62px;
+  border-bottom: 1px solid #4d4d4d;
+}
+.trademark h1 {
+  display: inline-block;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+}
+.trademark p {
+  display: inline-block;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666;
+  margin-left: 15px;
+}
+
+.links {
+  margin: 0 120px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.links .categories {
+  color: #fff;
+}
+.links .categories h3 {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 20px;
+}
+.links .categories .categories__links {
+  display: grid;
+  grid-template-columns: repeat(4, 160px);
+  -moz-column-gap: 75px;
+       column-gap: 75px;
+}
+.links .categories .categories__links a {
+  display: block;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.links .subscribe-form h3 {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 20px;
+}
+.links .subscribe-form input {
+  padding: 18px 24px;
+  font-family: "Libre Franklin", sans-serif;
+}
+.links .subscribe-form input::-moz-placeholder {
+  font-family: "Libre Franklin", sans-serif;
+}
+.links .subscribe-form input:-ms-input-placeholder {
+  font-family: "Libre Franklin", sans-serif;
+}
+.links .subscribe-form input::placeholder {
+  font-family: "Libre Franklin", sans-serif;
+}
+.links .subscribe-form button {
+  padding: 18px 24px;
+  font-family: "Libre Franklin", sans-serif;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.links .subscribe-form button:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.links-second-line {
+  margin: 0 120px;
+  padding-bottom: 95px;
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  -moz-column-gap: 75px;
+       column-gap: 75px;
+  color: #fff;
+}
+.links-second-line .links-container h3 {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 20px;
+}
+.links-second-line .links-container .links-container__links a {
+  font-weight: 400;
+  display: block;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */
